@@ -80,8 +80,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Data\SampleData.cs" />
-    <Compile Include="TextBoxWithOptions.cs" />
-    <Compile Include="TextBoxWithOptionsViewModel.cs" />
+    <Compile Include="MainWindowViewModel.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

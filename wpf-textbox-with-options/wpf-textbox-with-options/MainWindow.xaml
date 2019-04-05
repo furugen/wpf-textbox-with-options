@@ -4,12 +4,15 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:wpf_textbox_with_options"
+        xmlns:txop="clr-namespace:TextBoxWithOptions;assembly=TextBoxWithOptions"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <StackPanel>
         <StackPanel Height="20" Orientation="Horizontal"  >
             <TextBlock>都道府県</TextBlock>
-            <local:TextBoxWithOptions></local:TextBoxWithOptions>
+            <txop:TextBoxWithOptions 
+                DisplayMemberPath="EmployeeName"
+                ItemsSource="{Binding SampleData}"  Width="200"></txop:TextBoxWithOptions>
         </StackPanel>
         <StackPanel Height="40" Orientation="Horizontal"  >
             <TextBlock>日付</TextBlock>

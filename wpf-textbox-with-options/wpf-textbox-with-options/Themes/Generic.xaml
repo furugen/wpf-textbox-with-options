@@ -4,33 +4,5 @@
     xmlns:local="clr-namespace:wpf_textbox_with_options">
 
 
-    <Style TargetType="{x:Type local:TextBoxWithOptions}">
-        <Setter Property="Focusable" Value="False"></Setter>
-        <Setter Property="MinWidth" Value="30"></Setter>
-        <Setter Property="Template">
-            <Setter.Value>
-                <ControlTemplate TargetType="{x:Type local:TextBoxWithOptions}">
-                    <Grid KeyboardNavigation.TabNavigation="Cycle">
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition  Width="200"></ColumnDefinition>
-                            <ColumnDefinition  Width="200"></ColumnDefinition>
-                        </Grid.ColumnDefinitions>
 
-                        <TextBox x:Name="textKeyword" Grid.Column="0" Text="{Binding Keyword.Value, UpdateSourceTrigger=PropertyChanged}"></TextBox>
-                        <Popup Placement="Bottom" PlacementTarget="{Binding BindingGroupName=textKeyword, Path=self}" x:Name="popupOptions">
-                            <StackPanel>
-                                <ListBox x:Name="listOptions" ItemsSource="{Binding SampleData}" IsTabStop="False">
-                                    <ListBox.ItemTemplate>
-                                        <DataTemplate>
-                                            <TextBlock Text="{Binding Name}"></TextBlock>
-                                        </DataTemplate>
-                                    </ListBox.ItemTemplate>
-                                </ListBox>
-                            </StackPanel>
-                        </Popup>
-                    </Grid>
-                </ControlTemplate>
-            </Setter.Value>
-        </Setter>
-    </Style>
 </ResourceDictionary>

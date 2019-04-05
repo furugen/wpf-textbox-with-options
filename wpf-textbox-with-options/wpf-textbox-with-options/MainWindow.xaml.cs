@@ -23,6 +23,7 @@ namespace wpf_textbox_with_options
         public MainWindow()
         {
             InitializeComponent();
+            this.DataContext = new MainWindowViewModel();
         }
     }
 }

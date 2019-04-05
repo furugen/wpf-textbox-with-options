@@ -8,7 +8,7 @@ namespace wpf_textbox_width_options.Data
 {
     public class SampleData
     {
-        public string Name { get; set; }
+        public string EmployeeName { get; set; }
         public string Hiragana { get; set; }
         public string Romaji { get; set; }
     }
